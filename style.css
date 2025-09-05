@@ -1,0 +1,1447 @@
+/* Osnovne postavke */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #000;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 17pt !important;;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #70b7ff; /* Dodaj ovo */
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #bbbbbb;
+  text-align: CENTER; /* OVO dodaj */
+  margin-bottom: 20px;
+}
+
+
+.story {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #222;
+}
+
+a {
+  color: #70b7ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 600px;
+  margin: 20px 10px;
+}
+
+input,
+textarea,
+button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #70b7ff;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #559edf;
+}
+
+h2.author {
+  color: #fff; !important;
+}
+
+.hero-animacija {
+  animation: drift 8s ease-in-out infinite;
+  transition: filter 1s ease-in-out;
+}
+
+@keyframes drift {
+  0% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(105%) blur(1px);
+    transform: scale(1.08);
+  }
+  100% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1);
+  }
+}
+
+.report-block {
+  background-color: #111;
+  border-left: 4px solid #a66bff; /* ljubičasta linija */
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #ccc;
+  box-shadow: 0 0 10px rgba(166, 107, 255, 0.2); /* svetlucavi odsjaj */
+}
+
+
+.email-block {
+  background-color: #0f0f1a;
+  border-left: 4px solid #45aaff;
+  padding: 1.2rem 1.5rem;
+  margin: 2rem 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #d0e7ff;
+  box-shadow: 0 0 12px rgba(69, 170, 255, 0.1);
+  position: relative;
+  line-height: 1.5;
+}
+
+.email-block::before {
+  content: "INBOX MESSAGE";
+  position: absolute;
+  top: -1.2rem;
+  left: 1rem;
+  background-color: #0f0f1a;
+  color: #45aaff;
+  font-size: 0.85rem;
+  padding: 0 0.6rem;
+  letter-spacing: 0.07em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.email-header {
+  border-bottom: 1px dashed #3c3c5c;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #a2b8cc;
+}
+
+.email-header strong {
+  color: #ffffff;
+}
+
+.email-body {
+  margin-top: 0.5rem;
+}
+.forensic-report {
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  background-color: #0f0f0f;
+  color: #C1F0FF;
+  border-left: 4px solid #00d1ff;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 10px rgba(0, 209, 255, 0.2);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+.redacted {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: #ffaaaa;
+}
+
+.edited-note {
+  font-size: 0.75rem;
+  color: #bbb;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.forensic-note {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #888;
+  display: block;
+  margin-bottom: 0.2rem;
+  padding-left: 1rem;
+  border-left: 2px solid #9a9aff;
+}
+.forensic-note {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #888;
+  display: block;
+  margin-bottom: 0.2rem;
+  padding-left: 1rem;
+  border-left: 2px solid #9a9aff;
+}
+hr {
+  border: none;
+  border-top: 1px solid #7af77a; /* ista boja kao leva linija iz .forensic */
+  margin: 2rem 0;
+  opacity: 0.4;
+}
+
+.med-report {
+  background-color: #f8f8fb;
+  border-left: 4px solid #9b59b6;
+  padding: 1.2em 1.6em;
+  margin: 2em 0;
+  font-family: 'Courier New', monospace;
+  color: #333;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.med-report h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #7d3c98;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 0.3em;
+}
+
+.med-report p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.report-dark {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px #222;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+.report-dark h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alcolight-reklama {
+  background: black;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 30px #ff00cc;
+}
+
+.alcolight-reklama {
+  background: black;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 20px #ff00cc;
+  max-width: 600px;
+  margin: auto;
+}
+
+.alcolight-reklama h1 {
+  font-size: 1.1em; /* bilo 1.5em */
+  background: linear-gradient(270deg, #ff0055, #ffcc00, #00ff99, #00ccff, #cc00ff);
+  background-size: 1000% 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowGlow 10s linear infinite;
+  margin-bottom: 10px;
+  text-shadow: 0 0 4px rgba(255,255,255,0.2);
+}
+
+.alcolight-reklama p {
+  font-size: 0.85em; /* bilo 0.95em */
+  color: #f0f0f0;
+  text-shadow: 0 0 2px #ff00cc;
+  line-height: 1.4em;
+}
+
+@keyframes rainbowGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.terminal-output {
+  background-color: #000;
+  color: #00ff66;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ff66;
+  max-width: 600px;
+  margin: 20px 10px;
+  white-space: pre-wrap;
+  min-height: 8em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.pne-log {
+  background-color: #000;
+  color: #33ff33;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,255,0,0.2);
+  max-width: 500px;
+  margin: 2rem 0;             /* umesto auto centriranja, samo top/bottom margina */
+  line-height: 1.4;
+  text-align: left;
+}
+
+.pne-title {
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  color: #aaa;
+  font-size: 0.75rem;
+  margin: 0 0 -0.5rem 0;      /* isto, uklonjen auto centar */
+  max-width: 500px;
+}
+
+
+/* Terminal stil za pre blokove */
+/* Terminal log stil */
+pre {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
+  margin: 2rem 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+/* Neonski zeleni glow */
+pre span {
+  text-shadow: 0 0 2px #00FF00;
+}
+
+/* Suptilniji kursor */
+pre::after {
+  content: "▌";
+  font-size: 0.8rem;         /* manji kursor */
+  opacity: 0.4;              /* slabiji glow */
+  animation: blink 1.3s steps(2, start) infinite;
+  color: #00FF00;
+  margin-left: 0.3rem;
+  vertical-align: -0.1rem;   /* blago niže */
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #f5f5f5;
+  background-color: #111;
+  margin: 0;
+  padding: 2rem;
+}
+
+#limbiq-banner {
+  background-color: #000;
+  color: #00fff7;
+  font-family: 'Orbitron', sans-serif;
+  padding: 30px 16px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 0 16px rgba(0, 255, 247, 0.12);
+}
+
+#limbiq-banner h1 {
+  font-size: 1.8rem;
+  margin: 0 0 6px;
+  letter-spacing: 1px;
+}
+
+#limbiq-banner h2 {
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #aafaf8;
+  font-weight: normal;
+}
+
+#limbiq-banner p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+.code-log {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  line-height: 0.85;
+  white-space: pre-wrap;
+  box-shadow: 0 0 0 1px #30363d;
+  overflow-x: auto;
+  max-width: 700px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.code-log .header {
+  color: #8b949e;
+  margin-bottom: 1rem;
+}
+
+.code-log .header .path {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.code-log .timestamp {
+  color: #8b949e;
+  margin-right: 0.5rem;
+}
+
+.code-log .user {
+  color: #58a6ff;
+}
+
+.code-log .line {
+  display: block;
+}
+
+/* TABLOID HEADER */
+.tabloid-header {
+  background-color: #330000;
+  color: #f8f8f8;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border-bottom: 2px solid #660000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.tabloid-header h1 {
+  font-size: 36px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.tabloid-header .tagline {
+  font-size: 14px;
+  margin: 5px 0 10px 0;
+  font-style: italic;
+  color: #ccc;
+}
+
+.tabloid-header .breaking-news {
+  font-size: 22px;
+  margin: 10px 0;
+  background-color: #220000;
+  color: #ff5555;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.tabloid-header .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #dddddd;
+  margin
+}
+
+.news-article {
+  font-family: 'Roboto Slab', serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+
+.chat-log {
+  background-color: #0f1115;
+  color: #dcdcdc;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #2a2d34;
+  white-space: pre-wrap;
+}
+
+.chat-log .timestamp {
+  color: #666;
+  margin-right: 4px;
+}
+
+.chat-log .username {
+  color: #73b7f0;
+  font-weight: normal;
+}
+
+
+
+
+.chatlog-container {
+  background-color: #0f1115;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #d4d4d4;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.chatlog-header {
+  color: #8f9aa7;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.chatline {
+  margin-bottom: 4px;
+  white-space: pre-wrap;
+}
+
+.timestamp {
+  color: #777;
+  margin-right: 6px;
+}
+
+.username {
+  color: #73b7f0;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+
+/* Stilizovanje cele stranice */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centriranje glavnog sadržaja */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Stilizovanje kartica */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individualne kartice */
+.story-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.story-card:hover {
+    transform: translateY(-10px); /* Efekat podizanja prilikom hover-a */
+}
+
+/* Slike unutar kartica */
+.story-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Naslov unutar kartice */
+.story-card h2 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+/* Opis sadržaja priče */
+.story-card p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #aaa !important;
+}
+
+/* Link za čitanje više */
+.story-card a {
+    text-decoration: none;
+    color: #00f;
+    font-weight: bold;
+}
+
+.story-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Dodajemo osnovni izgled kartica */
+.card {
+  background-color: #222;
+  color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+}
+
+/* Slika na kartici */
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Naslov priče */
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Dugme za čitanje više */
+.card a {
+  text-decoration: none;
+  color: white;
+  background-color: #2e86c1;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #1c658c;
+}
+
+/* Dodavanje hover efekta na karticu */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+/* Osnovni stilovi */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Fleksibilni prikaz za kartice */
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone */
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: #2e86c1;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #1c658c;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Prilagodljivo za mobilne uređaje */
+@media (max-width: 768px) {
+    .story-container {
+        grid-template-columns: 1fr 1fr; /* 2 kolone za manje ekrane */
+    }
+}
+
+@media (max-width: 480px) {
+    .story-container {
+        grid-template-columns: 1fr; /* 1 kolona za mobilne uređaje */
+    }
+}
+/* Osnovne postavke */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #1a73e8;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card a.delete {
+    background-color: #e74c3c;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    opacity: 0.8;
+}
+
+
+/* Sužavanje širine sa sadržajem na 900px */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 0 20px; /* malo vazduha levo-desno */
+}
+
+.card-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* === INDEX CARDS LAYOUT === */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 0.95em;
+  color: #444;
+  flex: 1;
+}
+
+.card-link {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* --- Armenulićev Izveštaj Stil --- */
+.report-arm {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f1ea; /* požutela hartija */
+    color: #222;
+    line-height: 1.5;
+    padding: 40px;
+    border: 3px solid #000;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.report-arm h1, 
+.report-arm h2, 
+.report-arm h3 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.report-arm section {
+    margin-bottom: 40px;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+
+.report-arm p {
+    margin: 0 0 15px 0;
+}
+
+.report-arm table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.report-arm table, 
+.report-arm th, 
+.report-arm td {
+    border: 1px solid #000;
+}
+
+.report-arm th {
+    background-color: #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.report-arm td {
+    padding: 8px;
+}
+ 
+ 
+ /* --- Armenulićev Izveštaj Remaster (tamno siva verzija) --- */
+.report-arm2 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #111; /* mekše crno */
+    color: #f4f1ea; /* požutela bela */
+    padding: 20px;
+    border: 2px solid #444; /* tamno sivi okvir */
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    white-space: pre-wrap;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* tekstura pozadine (horizontalne linije) */
+.report-arm2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+/* suptilna unutrašnja senka */
+.report-arm2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05) inset;
+    pointer-events: none;
+}
+
+.story img {
+  width: 100%;
+  max-height: 280px; /* ili 250px ako hoćeš niže */
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* --- FIX: Siva boja opisa priča --- */
+.story p,
+.story-card p,
+.card p {
+  color: #aaa !important;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.story { cursor: pointer; }
+.story a { text-decoration: none; }
+.story:focus-within { outline: 2px solid #3ba55c; outline-offset: 3px; }
+
+.story { cursor: pointer; }
+.story a { text-decoration: none; }
+.story:focus { outline: 2px solid #3ba55c; outline-offset: 3px; }
+
+.story {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 128, 0.4);
+}
+
+.story img {
+  transition: opacity 0.2s ease;
+}
+
+.story:hover img {
+  opacity: 0.85;
+}
+.story {
+  border: 2px solid transparent;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+  border: 2px solid #5a2d82; /* tamnija ljubičasta */
+  box-shadow: 0 0 12px rgba(90, 45, 130, 0.6); /* glow */
+}
+
+/* lucijan.css */
+
+/* Kontejner poruke */
+.lucijan-msg {
+  background-color: #0d0d0d;
+  border: 2px solid #ff0040;
+  color: #e5e5e5;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 0, 64, 0.6);
+}
+
+/* Efekat “terminal headera” */
+.lucijan-msg::before {
+  content: "LUC";
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background-color: #0d0d0d;
+  color: #ff0040;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 0 0.4rem;
+  letter-spacing: 1px;
+}
+
+/* Link u poruci */
+.lucijan-msg a {
+  color: #ff4d6d;
+  text-decoration: underline;
+}
+
+.lucijan-msg a:hover {
+  color: #ff99a9;
+}
+
+/* “Glitch” animacija za tekst */
+@keyframes glitch {
+  0% { text-shadow: 1px 1px #ff0040, -1px -1px #00ffaa; }
+  20% { text-shadow: -1px -1px #ff0040, 1px 1px #00ffaa; }
+  40% { text-shadow: 1px -1px #ff0040, -1px 1px #00ffaa; }
+  60% { text-shadow: -1px 1px #ff0040, 1px -1px #00ffaa; }
+  80% { text-shadow: 1px 1px #ff0040, -1px -1px #00ffaa; }
+  100% { text-shadow: -1px -1px #ff0040, 1px 1px #00ffaa; }
+}
+
+.lucijan-msg {
+  animation: glitch 2.5s infinite;
+}
+
+/* lucijan-bbs.css */
+
+/* CRT pozadina + blaga vinjeta */
+.crt {
+  position: relative;
+  background: radial-gradient(120% 140% at 50% 0%,
+              #0c120c 0%, #0a0f0a 45%, #070a07 100%);
+  border: 1px solid #1b2b1b;
+  box-shadow:
+    inset 0 0 60px rgba(0, 255, 150, 0.05),
+    0 0 24px rgba(0, 0, 0, 0.8);
+  padding: 18px 20px;
+  margin: 18px 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* scanlines */
+.crt::before {
+  content: "";
+  pointer-events: none;
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 2px,
+    rgba(0,0,0,0.12) 3px
+  );
+  mix-blend-mode: multiply;
+}
+
+/* blago “flicker/vignette” preko svega */
+.crt::after {
+  content: "";
+  pointer-events: none;
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(120% 140% at 50% 50%,
+      rgba(0,0,0,0) 60%, rgba(0,0,0,0.35) 100%);
+  animation: crt-flicker 2.8s infinite steps(60);
+  opacity: .8;
+}
+
+@keyframes crt-flicker {
+  0%, 100% { opacity: .82; }
+  50% { opacity: .88; }
+}
+
+/* Terminal okvir */
+.bbs-window {
+  border: 1px solid #234a34;
+  background: #050a05;
+  box-shadow: inset 0 0 25px rgba(0,255,170,0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* “title bar” */
+.bbs-title {
+  background: linear-gradient(#07220f, #061b0c);
+  color: #8bf3c1;
+  font: 600 12px/1 'Courier New', ui-monospace, monospace;
+  letter-spacing: .06em;
+  padding: 6px 10px;
+  border-bottom: 1px solid #1a3e2a;
+  text-transform: uppercase;
+}
+
+/* sadržaj poruke – fosforno zelena, glow, mono */
+.bbs-body {
+  font: 16px/1.6 'Courier New', ui-monospace, monospace;
+  color: #9affd5;
+  text-shadow:
+    0 0 3px rgba(132, 255, 210, .6),
+    0 0 8px rgba(0, 255, 170, .25);
+  padding: 14px 16px;
+  white-space: pre-line; /* poštuje tvoje prelive/line-breaks */
+}
+
+/* prompt/markeri */
+.bbs-body .prompt {
+  color: #7df7c4;
+}
+.bbs-body .warn {
+  color: #ffdf7a;
+  text-shadow:
+    0 0 3px rgba(255, 215, 120, .6),
+    0 0 8px rgba(255, 180, 0, .28);
+}
+.bbs-body .danger {
+  color: #ff7a7a;
+  text-shadow:
+    0 0 4px rgba(255, 90, 90, .75),
+    0 0 10px rgba(255, 0, 0, .35);
+}
+
+/* link izgleda “telnet-asti” */
+.bbs-body a {
+  color: #aaffee;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaffee;
+}
+.bbs-body a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* sitan “degauss” glitch titraj naslova */
+@keyframes bbs-jitter {
+  0%,100% { transform: translateX(0); }
+  50% { transform: translateX(.4px); }
+}
+.bbs-title { animation: bbs-jitter 3.2s infinite; }
+
+/* opcioni mali kursor koji “trepće” */
+.cursor {
+  display: inline-block;
+  width: .6em;
+  height: 1.05em;
+  background: #9affd5;
+  margin-left: .1em;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: -0.15em;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ========== FINE PRINT ========== */
+:root {
+  --fp-bg: #f8fafc;       /* light bg */
+  --fp-text: #334155;     /* slate-700 */
+  --fp-border: #cbd5e1;   /* slate-300 */
+  --fp-accent: #64748b;   /* slate-500 */
+}
+
+.fine-print {
+  position: relative;
+  margin: 1.25rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--fp-border);
+  border-left: 4px solid var(--fp-accent);
+  background: var(--fp-bg);
+  color: var(--fp-text);
+  line-height: 1.6;
+  font-size: 0.92rem;            /* sitnije, ali čitko */
+  border-radius: 8px;
+}
+
+/* Automatska etiketa iz data-label ili default naslov */
+.fine-print::before {
+  content: attr(data-label);
+  display: block;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--fp-accent);
+  margin-bottom: 0.4rem;
+}
+.fine-print:not([data-label])::before {
+  content: "Napomena";
+}
+
+/* Linkovi u finom tisku – diskretni */
+.fine-print a {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
+/* Tamni režim */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fp-bg: #0b1220;     /* tamna plava/ugljen */
+    --fp-text: #d1d5db;   /* gray-300 */
+    --fp-border: #374151; /* gray-700 */
+    --fp-accent: #93c5fd; /* light-blue-300 */
+  }
+}
+
+/* Štampa – bez bojenog pozadinskog fill-a */
+@media print {
+  .fine-print {
+    background: transparent !important;
+    border-color: #999 !important;
+    color: #333 !important;
+  }
+}
+
+/* (Opc.) Kolaps varijanta preko <details class="fine-print"> */
+details.fine-print { padding: 0; }
+details.fine-print > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--fp-border);
+  border-left: 4px solid var(--fp-accent);
+  background: var(--fp-bg);
+  color: var(--fp-text);
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+details.fine-print > summary::-webkit-details-marker { display: none; }
+details.fine-print > summary::before {
+  content: "Napomena";
+  display: block;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--fp-accent);
+  margin-bottom: 0.25rem;
+}
+details.fine-print[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+details.fine-print > .fine-print__body {
+  border: 1px solid var(--fp-border);
+  border-top: 0;
+  border-left: 4px solid var(--fp-accent);
+  background: var(--fp-bg);
+  color: var(--fp-text);
+  padding: 0.9rem 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
