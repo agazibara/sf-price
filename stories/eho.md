@@ -1,7 +1,9 @@
 ---
 title: "Eho"
 author: "Aleksandar Gazibara"
+image: "img/eho.png"
 ---
+
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="img/eho.png" width="280" alt="Eho">

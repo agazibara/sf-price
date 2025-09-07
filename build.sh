@@ -1,17 +1,33 @@
-#!/bin/bash
-set -e
+ #!/usr/bin/env bash
+set -euo pipefail
 
-TEMPLATE="tpl.html"
+SRC_DIR="stories"     # .md fajlovi
+OUT_DIR="."           # gde ide .html
+TEMPLATE="tpl.html"   # pandoc šablon
 
-# Prođi kroz sve .md fajlove u stories/
-for f in stories/*.md; do
-  name=$(basename "$f" .md)
-  out="$name.html"
+command -v pandoc >/dev/null 2>&1 || { echo "Pandoc nije instaliran."; exit 1; }
+[ -d "$SRC_DIR" ] || { echo "Nema '$SRC_DIR' foldera."; exit 1; }
+[ -f "$TEMPLATE" ] || { echo "Nema template '$TEMPLATE'."; exit 1; }
+
+shopt -s nullglob
+count=0
+for f in "$SRC_DIR"/*.md; do
+  base="$(basename "$f" .md)"
+  out="$OUT_DIR/${base}.html"
   echo "→ $f  =>  $out"
-  pandoc "$f" \
-    --template="$TEMPLATE" \
-    -s -o "$out"
-done
 
-echo "✅ Gotovo. Renderovano u root. Koristi se samo style.css."
+  pandoc "$f" \
+    --from=markdown+yaml_metadata_block+smart \
+    --template="$TEMPLATE" \
+    -o "$out"
+
+  ((count++))
+done
+shopt -u nullglob
+
+if [ "$count" -eq 0 ]; then
+  echo "Nema .md fajlova u '$SRC_DIR'."
+else
+  echo "✅ Gotovo. Renderovano: $count fajl(ova)."
+fi
 

@@ -1,9 +1,12 @@
-title: "Eho"
+---
+title: "Sen"
 author: "Aleksandar Gazibara"
+image: "img/eho.png"
 ---
 
+
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="img/eho.png" width="280" alt="Eho">
+  <img src="img/sen.png" width="280" alt="Sen">
 </div>
 
 
