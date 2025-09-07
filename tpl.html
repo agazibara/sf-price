@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N3NPY3SWJB');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>$title$ – Aleksandar Gazibara</title>
+
+  <!-- CSS / favicon zadržani kao kod tebe -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>
+<body>
+  <main>
+    <!-- Naslovi iz meta (ako nema author, ne prikazuje se) -->
+    <h1>$title$</h1>
+    $if(author)$<h2>$author$</h2>$endif$
+
+    <!-- Ovde Pandoc ubacuje sadržaj tvoje .md priče -->
+    $body$
+
+    <br>
+    <a href="index.html" class="back">← Nazad na početnu</a>
+  </main>
+</body>
+</html>
+

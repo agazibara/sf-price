@@ -1,0 +1,143 @@
+<html lang="sr">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N3NPY3SWJB');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleksandar Gazibara – Priče</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="/img/favicon.png" rel="icon" type="image/png"/>
+  
+</head>
+<body>
+    <header>
+<h1>Aleksandar Gazibara</h1>
+<p>Kratke priče</p>
+</header>
+  <main>
+    <section>
+        <div class="story"><img alt="Eho" src="img/revo-3.png"/><h3><a href="revo.html">Revo</a></h3><p>Prijatelji. Smrt. Povratak.</p></div>
+      <div class="story"><img alt="Eho" src="img/eho.png"/><h3><a href="eho.html">Eho</a></h3><p>Dedina digitalna replika pokreće niz potisnutih porodičnih tajni.</p></div>
+      <div class="story"><img alt="Elipsa" src="img/elipsa.png"/><h3><a href="elipsa.html">Elipsa</a></h3><p>AI sesije i fragmenti izveštaja rekonstrušu priču o povlačenju iz stvarnosti.</p></div>
+      <div class="story"><img alt="Sinistri" src="img/sinistri.png"/><h3><a href="sinistri.html">Sinistri</a></h3><p>Nakon gubitka deteta, roditelji poručuju androidnu verziju.</p></div>
+      <div class="story"><img alt="Čardak" src="img/cardak.png"/><h3><a href="cardak.html">Čardak</a></h3><p>Predsednik Gravius, zatvoren u sferi sopstvenih projekcija, luta između svetova.</p></div>
+      <div class="story"><img alt="Fotonaut" src="img/fotonaut.png"/><h3><a href="fotonaut.html">Fotonaut</a></h3><p>v ≈ c. Telo na Zemlji. Svest u zvezdama.</p></div>
+      <div class="story"><img alt="Karusel" src="img/karusel.png"/><h3><a href="karusel.html">Karusel</a></h3><p>Uspomena je prostor. Neki odluče da ostanu.</p></div>
+      <div class="story"><img alt="Retrofit" src="img/retrofit.png"/><h3><a href="retrofit.html">Retrofit</a></h3><p>Bekstvo u prošlost, pa u kosmos.</p></div>
+      <div class="story"><img alt="T : Δ" src="img/delta-t.png"/><h3><a href="delta-t.html">T : Δ</a></h3><p>Dečak koji otkriva sposobnost kontrole vremena.</p></div>
+      <div class="story"><img alt="Alcolight" src="img/alcolight.png"/><h3><a href="alcolight.html">Alcolight</a></h3><p>Ironična parabola o zavisnosti.</p></div>
+      <div class="story"><img alt="Opna" src="img/nemanja.png"/><h3><a href="opna.html">Opna</a></h3><p>Jezero. Ekran. Priče. Ogledalo.</p></div>
+      <div class="story"><img alt="Archai" src="img/archai2.png"/><h3><a href="archai.html">Archai</a></h3><p>233, 377, 610, 987, 1597, 2584, 4181, 6765...</p></div>
+       <div class="story"><img alt="Seesaw" src="img/seesaw.png"/><h3><a href="seesaw.html">See/saw</a></h3><p>Na ljuljašci.</p></div>
+     
+    <div class="story"><img alt="Eliksir" src="img/lxr.jpg"/><h3><a href="eliksir.html">LXR</a></h3><p>Na korak do večnosti.</p></div>
+     <div class="story"><img alt="Imprint" src="img/imprint.png"/><h3><a href="imprint.html">Imprint</a></h3><p>Kada otkriće postane zločin.</p></div>
+     <div class="story"><img alt="Context Union" src="img/contextunion.jpeg"/><h3><a href="context-union.html">Context Union</a></h3><p>Jedna kapsula. Jedan kontekst. Život bez samoće.</p></div>
+    
+    <!--  
+
+      <div class="story" data-featured="1"><img alt="Context Union" src="img/contextunion.jpeg"/><h3><a href="context-union.html">Context Union</a></h3><p>Jedna kapsula. Jedan kontekst. Život bez samoće.</p></div>-->
+      
+    </section>
+    </main>
+<footer style="text-align:center; color:#ccc; font-size:0.9rem; padding: 25px 0; background-color:#0a0a0a; font-family: 'Inter', sans-serif;">
+  <div style="margin-bottom: 10px;">
+    © 2025 Aleksandar Gazibara<br>
+    kontakt: agazibara (at) gmail.com<br><br>
+    <a href="about.html">About</a>
+  </div>
+  <hr style="border: none; border-top: 1px solid rgba(59,165,92,0.6); width: 70%; margin: 18px auto;">
+  <div style="margin-top: 10px; color:#ddd; letter-spacing:0.5px; text-shadow: 0 0 5px rgba(59,165,92,0.6), 0 0 10px rgba(59,165,92,0.4);">
+    visuals & code: Čedomir
+  </div>
+</footer>
+
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector("section");
+  if (!container) return;
+
+  // --- KONFIG ---
+  const DURATION_DAYS = 7;
+  const LS_KEY_UNTIL = 'ag_featured_until_v2';
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('resetpin') === '1') localStorage.removeItem(LS_KEY_UNTIL);
+  const featuredoff = params.get('featuredoff') === '1';
+
+  // Pin state (postavi prozor odmah ako ga nema)
+  let until = parseInt(localStorage.getItem(LS_KEY_UNTIL) || '0', 10);
+  let pinActive = !featuredoff && Date.now() < until;
+
+  if (!featuredoff && (!until || isNaN(until) || until <= Date.now())) {
+    // ako nema prozora, startuj novi i odmah aktiviraj pin
+    const expiresAt = Date.now() + DURATION_DAYS * 24 * 60 * 60 * 1000;
+    localStorage.setItem(LS_KEY_UNTIL, String(expiresAt));
+    until = expiresAt;
+    pinActive = true;
+  }
+
+  // Skupi kartice
+  const allStories = Array.from(container.querySelectorAll('.story'));
+  // Nadji featured po atributu (NE po poziciji u DOM-u)
+  const featured = allStories.find(el => el.dataset.featured === "1") || null;
+
+  // Napravi NOVU listu za render (da ne mutiraš originalni niz), promješaj
+  const order = allStories.slice().sort(() => Math.random() - 0.5);
+
+  // Ako ima featured, izvadi ga iz shuffle-a i po potrebi ubaci na početak
+  if (featured) {
+    const idx = order.indexOf(featured);
+    if (idx > -1) order.splice(idx, 1); // izbaci iz trenutne pozicije
+    if (pinActive) {
+      order.unshift(featured);          // stavi na vrh kad je pin aktivan
+    } else {
+      // nije pin aktivan → neka ostane u mixu na random mestu
+      const r = Math.floor(Math.random() * (order.length + 1));
+      order.splice(r, 0, featured);
+    }
+  }
+
+  // Render
+  container.innerHTML = '';
+  order.forEach(card => container.appendChild(card));
+
+  // pristupačnost
+  container.querySelectorAll(".story").forEach(card => {
+    card.setAttribute("tabindex", "0");
+  });
+
+  // klik vodi na <h3><a>
+  container.addEventListener("click", (e) => {
+    const card = e.target.closest(".story");
+    if (!card || !container.contains(card)) return;
+    if (e.target.closest("a")) return;
+    const link = card.querySelector("h3 a");
+    if (link && link.href) window.location.href = link.href;
+  });
+
+  // ENTER aktivira karticu
+  container.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") return;
+    const card = e.target.closest(".story");
+    if (!card) return;
+    const link = card.querySelector("h3 a");
+    if (link && link.href) window.location.href = link.href;
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
