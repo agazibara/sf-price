@@ -10,7 +10,9 @@ image: "img/eho.png"
 </div>
 
 
-Morao bih do prodavnice, nisam izlazio dva dana – pomisli Senad, koji se tek navikavao na penzionerski život. Njegovi dani svodili su se na kupovinu novina, odlazak do piljarnice i povremeni obilazak Pošte. Knjige je redovno poručivao preko interneta. Nije imao porodicu, a ni mnogo kontakta s komšijama. Radni vek proveo je kao činovnik u Dunav osiguranju – pouzdan, diskretan, neupadljiv. Kolege su ga već posle nekoliko meseci skoro potpuno zaboravile.
+Morao bih do prodavnice, nisam izlazio dva dana – pomisli Senad, koji se tek navikavao na penzionerski život. Njegovi dani svodili su se na kupovinu novina, odlazak do piljarnice i povremeni obilazak Pošte.
+Knjige je redovno poručivao preko interneta. Nije imao porodicu, a ni mnogo kontakta s komšijama.
+Radni vek proveo je kao činovnik u Dunav osiguranju – pouzdan, diskretan, neupadljiv. Kolege su ga već posle nekoliko meseci skoro potpuno zaboravile.
 
 Počeo je pomalo i da uživa u svojim novim ritualima. Čak je počeo i da upoznaje ljude koji su radili u lokalima koje je skoro svakodnevno posećivao:
 
@@ -34,7 +36,7 @@ Sa svakim od njih izgradio je jedan mali, komšijski odnos. To je, na neki nači
 
 _Nisam ni znao koliko je moguće uživati u malim stvarima i malim razgovorima. Fini komšiluk, pre penzije ništa od ovoga nisam primećivao. Možda je to i starost._
 
-Jedno jutro, Senad se probudio znatno kasnije nego obično. Od početka se nije osećao kao da je sve u redu. Nije potpuno vladao svojim telom, misli su mu bile rasute, a stan mu je odjednom izgledao pomalo nepoznato.
+Jedno jutro, Senad se probudio znatno kasnije nego obično. Od početka se nije osećao kao da je sve u redu. Kao da je u polusnu. Nije potpuno vladao svojim telom, misli su mu bile rasute, a stan mu je odjednom izgledao pomalo nepoznato.
 
 _Hm, danas je sve pomalo drugačije_ – pomisli Senad. – _Da li možda da ne idem nikuda…_
 
