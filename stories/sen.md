@@ -51,7 +51,7 @@ Sada je već neko vreme proveo u tom redu, čekajući Darkov pozdrav. Darko ga n
 Kada je konačno stigao na red, Darko pogledom prelete preko njega, a onda se obrati nekome iza.
 
 – Izvolite, gospođo – reče Darko, pomalo nervozno.  
-– Molim vas, dvesta grama pečenice – reče gospođa, šireći miris parfema.
+– Molim Vas, dvesta grama pečenice – reče gospođa, šireći miris parfema.
 
 – Darko? – zausti Senad.
 
