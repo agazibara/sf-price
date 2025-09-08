@@ -26,6 +26,7 @@ Počeo je pomalo i da uživa u svojim novim ritualima. Čak je počeo i da upozn
 Sa svakim od njih izgradio je jedan mali, komšijski odnos. To je, na neki način, bio njegov novi socijalni život.
 
 – Zdravo, komšija! Dajte malo kajmaka i manju pogaču – uzvikne Senad.  
+≈
 – Odmah stiže, gospodine Neneziću – odgovori mu Darko dok hitro pakuje i istovremeno motri na ostale kupce u radnji.
 
 – Je l’ danas isto, komšija? – upita ga Bojana na kiosku.  
@@ -37,6 +38,46 @@ Sa svakim od njih izgradio je jedan mali, komšijski odnos. To je, na neki nači
 _Nisam ni znao koliko je moguće uživati u malim stvarima i malim razgovorima. Fini komšiluk, pre penzije ništa od ovoga nisam primećivao. Možda je to i starost._
 
 Jedno jutro, Senad se probudio znatno kasnije nego obično. Od početka se nije osećao kao da je sve u redu. Kao da je u polusnu. Nije potpuno vladao svojim telom, misli su mu bile rasute, a stan mu je odjednom izgledao pomalo nepoznato.
+
+_Hm, danas je sve pomalo drugačije_ – pomisli Senad. – _Da li možda da ne idem nikuda…_
+---
+title: "Sen"
+author: "Aleksandar Gazibara"
+image: "img/eho.png"
+---
+
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="img/sen.png" width="280" alt="Sen">
+</div>
+
+Morao bih do prodavnice, nisam izlazio dva dana – pomisli Senad, koji se tek navikavao na penzionerski život. Njegovi dani svodili su se na kupovinu novina, odlazak do piljarnice i povremeni obilazak Pošte. 
+
+Knjige je redovno poručivao preko interneta. Nije imao porodicu, a ni mnogo kontakta s komšijama. Radni vek proveo je kao činovnik u Dunav osiguranju – pouzdan, diskretan, neupadljiv. Kolege su ga već posle nekoliko meseci skoro potpuno zaboravile.
+
+Počeo je pomalo i da uživa u svojim novim ritualima. Čak je počeo i da upoznaje ljude koji su radili u lokalima koje je skoro svakodnevno posećivao:
+
+-   u pošti – gospođa Ruža,
+    
+-   u piljarnici – vlasnik Darko,
+    
+-   na kiosku – mlađa devojka Bojana.
+    
+
+Sa svakim od njih izgradio je jedan mali, komšijski odnos. To je, na neki način, bio njegov novi socijalni život.
+
+– Zdravo, komšija! Dajte malo kajmaka i manju pogaču – uzvikne Senad.  
+– Odmah stiže, gospodine Neneziću – odgovori mu Darko dok hitro pakuje i istovremeno motri na ostale kupce u radnji.
+
+– Je l’ danas isto, komšija? – upita ga Bojana na kiosku.  
+– Isto, komšinice – odgovori Senad, pakujući novine.
+
+– Penzija već? – upita gospođa Ruža.  
+– Da, sve znate! – odgovori Senad.
+
+_Nisam ni znao koliko je moguće uživati u malim stvarima i malim razgovorima. Fini komšiluk, pre penzije ništa od ovoga nisam primećivao. Možda je to i starost._
+
+Jedno jutro, Senad se probudio znatno kasnije nego obično. Od početka se nije osećao kao da je sve u redu. Nije potpuno vladao svojim telom, misli su mu bile rasute, a stan mu je odjednom izgledao pomalo nepoznato.
 
 _Hm, danas je sve pomalo drugačije_ – pomisli Senad. – _Da li možda da ne idem nikuda…_
 
@@ -53,7 +94,7 @@ Sada je već neko vreme proveo u tom redu, čekajući Darkov pozdrav. Darko ga n
 Kada je konačno stigao na red, Darko pogledom prelete preko njega, a onda se obrati nekome iza.
 
 – Izvolite, gospođo – reče Darko, pomalo nervozno.  
-– Molim Vas, dvesta grama pečenice – reče gospođa, šireći miris parfema.
+– Molim vas, dvesta grama pečenice – reče gospođa, šireći miris parfema.
 
 – Darko? – zausti Senad.
 
