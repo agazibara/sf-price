@@ -1,44 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-N3NPY3SWJB');
+<!-- Google Analytics (sa localStorage zaštitom) -->
+<script>
+  if (!localStorage.getItem("noGA")) {
+    var gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"; // zameni sa tvojim ID-jem
+    document.head.appendChild(gtagScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N3NPY3SWJB'); // isto zameni sa tvojim ID-jem
+  } else {
+    console.log("GA blocked for this browser");
+  }
 </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>About – Aleksandar Gazibara</title>
+
+  <!-- CSS / favicon zadržani kao kod tebe -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/img/favicon.png">
-
-
-
 </head>
 <body>
-<main><br><br>
- <p>Ove priče su nastale u relativno kratkom intervalu, od oko mesec i po dana, bez ikakvog plana ili najave. Prethodno sam bio napisao (pre tridesetak godina) priču koja nema mnogo veze sa ovim temama, a po stilu najviše podseća na Čardak.<br><br>
+  <main>
+    <!-- Naslovi iz meta (ako nema author, ne prikazuje se) -->
+    <h1>About</h1>
+    
 
-Najzahtevnije za pisanje bile su mi Archai i Imprint, jer sam imao ideje koje mi je bilo teško da uobličim i objasnim. I dalje nisam siguran da li sam u tome uspeo.<br><br>
+    <!-- Ovde Pandoc ubacuje sadržaj tvoje .md priče -->
+    <p>Ove priče su nastale u relativno kratkom intervalu, od oko mesec
+    i po dana, bez ikakvog plana ili najave. Prethodno sam bio napisao
+    (pre tridesetak godina) priču koja nema mnogo veze sa ovim temama, a
+    po stilu najviše podseća na Čardak.</p>
+    <p>Najzahtevnije za pisanje bile su mi Archai i Imprint, jer sam
+    imao ideje koje mi je bilo teško da uobličim i objasnim. I dalje
+    nisam siguran da li sam u tome uspeo.</p>
+    <p>Možda ponegde deluju pretenciozno — to mi nije bila namera. Čitam
+    redje nego što bih voleo, a kada čitam, to nikada nije SF. Ako kršim
+    konvencije i pravila, to je zato što ih ne poznajem.</p>
+    <p>Zašto sajt? Tako mi je bilo najlakše da podelim priče sa
+    prijateljima, a oni mogu da ih dele dalje ako tako budu želeli.</p>
+    <p>Hvala na pažnji. ❤</p>
 
-Možda ponegde deluju pretenciozno — to mi nije bila namera. Čitam redje nego što bih voleo, a kada čitam, to nikada nije SF. Ako kršim konvencije i pravila, to je zato što ih ne poznajem.<br><br>
-
-Zašto sajt? Tako mi je bilo najlakše da podelim priče sa prijateljima, a oni mogu da ih dele dalje ako tako budu želeli.<br><br>
-
-Hvala na pažnji. ❤<br>
-  </p>
-
-  <!-- Ovde ide cela priča u <p> tagovima -->
-
-  <a href="index.html" class="back">← Nazad na početnu</a>
-</main>
+    <br>
+    <a href="index.html" class="back">← Nazad na početnu</a>
+  </main>
 </body>
 </html>
-
-
-
