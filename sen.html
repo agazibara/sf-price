@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"></script>
-  <script>
+
+<!-- Google Analytics (sa localStorage zaštitom) -->
+<script>
+  if (!localStorage.getItem("noGA")) {
+    var gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"; // zameni sa tvojim ID-jem
+    document.head.appendChild(gtagScript);
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-N3NPY3SWJB');
-  </script>
+    gtag('config', 'G-XXXXXXX'); // isto zameni sa tvojim ID-jem
+  } else {
+    console.log("GA blocked for this browser");
+  }
+</script>
+
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,17 +38,14 @@
     <!-- Ovde Pandoc ubacuje sadržaj tvoje .md priče -->
     <div style="text-align: center; margin: 2rem 0;">
     <p><img src="img/sen.png" width="280" alt="Sen"></p>
-    </div>
     <p>Morao bih do prodavnice, nisam izlazio dva dana – pomisli Senad,
     koji se tek navikavao na penzionerski život. Njegovi dani svodili su
     se na kupovinu novina, odlazak do piljarnice i povremeni obilazak
-    Pošte. 
-    
-    <p>Knjige je redovno poručivao preko interneta. Nije imao
-    porodicu, a ni mnogo kontakta s komšijama. Radni vek proveo je kao
-    činovnik u Dunav osiguranju – pouzdan, diskretan, neupadljiv.</p>
-    
-    <p>Kolege su ga već posle nekoliko meseci skoro potpuno zaboravile.</p>
+    pošte.</p>
+    <p>Knjige je redovno poručivao preko interneta. Nije imao porodicu,
+    a ni mnogo kontakta s komšijama. Radni vek proveo je kao činovnik u
+    Dunav osiguranju – pouzdan, diskretan, neupadljiv. Kolege su ga već
+    posle nekoliko meseci skoro potpuno zaboravile.</p>
     <p>Počeo je pomalo i da uživa u svojim novim ritualima. Čak je počeo
     i da upoznaje ljude koji su radili u lokalima koje je skoro
     svakodnevno posećivao:</p>
@@ -82,7 +89,7 @@
     <p>Kada je konačno stigao na red, Darko pogledom prelete preko
     njega, a onda se obrati nekome iza.</p>
     <p>– Izvolite, gospođo – reče Darko, pomalo nervozno.<br />
-    – Molim Vas, dvesta grama pečenice – reče gospođa, šireći miris
+    – Molim vas, dvesta grama pečenice – reče gospođa, šireći miris
     parfema.</p>
     <p>– Darko? – zausti Senad.</p>
     <p>Darko nastavi da uslužuje.</p>
@@ -126,6 +133,7 @@
     glavu levo–desno, pokušavajući da prati dinamiku razgovora.</p>
     <p>Odjednom oseti kako se nešto u njemu ruši. Onda izađe iz pošte i
     nestade iza ugla. Njegovu priliku nije pratila jasna senka.</p>
+    </div>
 
     <br>
     <a href="index.html" class="back">← Nazad na početnu</a>

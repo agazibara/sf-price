@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"></script>
-  <script>
+
+<!-- Google Analytics (sa localStorage zaštitom) -->
+<script>
+  if (!localStorage.getItem("noGA")) {
+    var gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-N3NPY3SWJB"; // zameni sa tvojim ID-jem
+    document.head.appendChild(gtagScript);
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-N3NPY3SWJB');
-  </script>
+    gtag('config', 'G-XXXXXXX'); // isto zameni sa tvojim ID-jem
+  } else {
+    console.log("GA blocked for this browser");
+  }
+</script>
+
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
