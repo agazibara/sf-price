@@ -7,7 +7,7 @@ image: "img/eho.png"
 
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="img/sen.png" width="280" alt="Sen">
+  <img src="img/sen.png" width="280" alt="Sen"></div>
 
 Morao bih do prodavnice, nisam izlazio dva dana – pomisli Senad, koji se tek navikavao na penzionerski život. Njegovi dani svodili su se na kupovinu novina, odlazak do piljarnice i povremeni obilazak pošte. 
 
